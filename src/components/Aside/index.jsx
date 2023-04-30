@@ -7,21 +7,26 @@ import Topicon from "../../images/user-group.png";
 import Feedicon from "../../images/feed-1.png";
 import Contacticon from "../../images/headset.png";
 import Burgericon from "../../images/free-icon-font-menu-burger.png";
+import Settings from "../../images/gear.png";
 
 const Asiide = styled.aside`
   height: 100%;
   width: 150px;
   background-color: #f9fafb;
   height: 100%;
+  overflow: hidden;
 `;
 const Div = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
+  &:hover {
+    background-color: #FFD500;
+  }
 `;
 const Text = styled.p`
   color: #637381;
-  margin-left: 10px;
+  margin-left: 22px;
   font-weight: 600;
 `;
 const BurgerMenu = styled.img`
@@ -47,6 +52,15 @@ const Feed = styled.img`
 `;
 const Contact = styled.img`
   margin-left: 20px;
+`;
+const Settingsicon = styled.img`
+  margin-left: 20px;
+`;
+const Div2 = styled.div`
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 450px;
 `;
 
 function Aside() {
@@ -92,6 +106,10 @@ function Aside() {
         <Contact src={Contacticon} />
         <Text>Contact</Text>
       </Div>
+      <Div2>
+        <Settingsicon src={Settings} />
+        <Text>Settings</Text>
+      </Div2>
     </Asiide>
   );
 }
