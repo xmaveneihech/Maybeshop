@@ -1,15 +1,12 @@
 import React from "react";
-import styled from "styled-components";
-import Navbar from "../../components/Navbar";
-import Aside from "../../components/Aside/"
+import CardList from "../../components/Cards";
 
 const Home = () => {
-    return(
-        <>
-        <Navbar/>
-        <Aside/>
-        </>
-    )
+  return (
+    <>
+      <CardList />
+    </>
+  );
 };
 
 export default Home;

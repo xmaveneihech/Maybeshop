@@ -13,21 +13,22 @@ const Asiide = styled.aside`
   height: 100%;
   width: 150px;
   background-color: #f9fafb;
-  height: 100%;
   overflow: hidden;
 `;
 const Div = styled.div`
+  margin-top: 20px;
   display: flex;
   align-items: center;
   cursor: pointer;
   &:hover {
-    background-color: #FFD500;
+    background-color: #ffd500;
   }
 `;
 const Text = styled.p`
   color: #637381;
   margin-left: 22px;
   font-weight: 600;
+  white-space: nowrap;
 `;
 const BurgerMenu = styled.img`
   cursor: pointer;

@@ -7,6 +7,8 @@ import Carticon from "../../images/cart.png";
 const Nav = styled.nav`
   width: 100%;
   height: 90px;
+  display: flex;
+  justify-content: space-between;
   background-color: #f6f7f9;
 `;
 const Search = styled.input`
@@ -22,28 +24,40 @@ const Search = styled.input`
   margin-top: 20px;
 `;
 const Moon = styled.img`
-  position: relative;
-  top: 7px;
-  left: 465px;
+  margin-right: 1rem;
 `;
 const Bell = styled.img`
-  position: relative;
-  top: 7px;
-  left: 485px;
+  margin-right: 1rem;
 `;
 const Cart = styled.img`
-  position: relative;
-  top: 7px;
-  left: 505px;
+  margin-right: 1rem;
 `;
+const Navigation = styled("div")`
+  display: flex;
+  align-items: center;
+`;
+const Button = styled.button`
+  border: none;
+  cursor: pointer;
+  background-color: #ffd500;
+  width: 150px;
+  height: 30px;
+  border-radius: 20px;
+  &:hover {
+    background-color: #f6cd00;
+  }
+`;
+
 const Navbar = () => {
   return (
     <Nav>
       <Search type="text" placeholder="Search" />
-      <Moon src={Moonicon} />
-      <Bell src={Bellicon} />
-      <Cart src={Carticon} />
-      <button>Become a seller</button>
+      <Navigation>
+        <Moon src={Moonicon} />
+        <Bell src={Bellicon} />
+        <Cart src={Carticon} />
+        <Button>Become a seller</Button>
+      </Navigation>
     </Nav>
   );
 };
