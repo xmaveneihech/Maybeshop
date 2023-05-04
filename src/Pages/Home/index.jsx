@@ -1,10 +1,10 @@
 import React from "react";
-import CardList from "../../components/Cards";
+import Section from "../../components/Section";
 
 const Home = () => {
   return (
     <>
-      <CardList />
+      <Section />
     </>
   );
 };

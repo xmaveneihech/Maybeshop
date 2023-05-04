@@ -25,14 +25,19 @@ const Search = styled.input`
 `;
 const Moon = styled.img`
   margin-right: 1rem;
+  cursor: pointer;
 `;
 const Bell = styled.img`
   margin-right: 1rem;
+  cursor: pointer;
 `;
 const Cart = styled.img`
   margin-right: 1rem;
+  cursor: pointer;
 `;
 const Navigation = styled("div")`
+  margin-right: 30px;
+  margin-top: -10px;
   display: flex;
   align-items: center;
 `;
