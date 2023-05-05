@@ -10,6 +10,7 @@ import Burgericon from "../../images/free-icon-font-menu-burger.png";
 import Settings from "../../images/gear.png";
 
 const Asiide = styled.aside`
+
   height: 100%;
   width: 150px;
   background-color: #f9fafb;
@@ -61,7 +62,7 @@ const Div2 = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
-  margin-top: 450px;
+  margin-top: 85rem;
 `;
 
 function Aside() {

@@ -9,9 +9,10 @@ const Nav = styled.nav`
   height: 90px;
   display: flex;
   justify-content: space-between;
-  background-color: #f6f7f9;
+  background-color: #F4F6F8;
 `;
 const Search = styled.input`
+position: static;
   width: 220px;
   height: 38px;
   font-size: 15px;
@@ -20,7 +21,7 @@ const Search = styled.input`
   padding-left: 50px;
   background-color: #dfe3e8;
   outline: none;
-  margin-left: 20px;
+  margin-left: 50px;
   margin-top: 20px;
 `;
 const Moon = styled.img`

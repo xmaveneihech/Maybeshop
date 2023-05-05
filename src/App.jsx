@@ -6,11 +6,11 @@ import Home from "./Pages/Home";
 
 const Body = styled.body`
   display: flex;
-  height: 1000px;
+  height: 2000px;
 `;
 const MainContainer = styled("div")`
   width: 100%;  
-  background-color: #F9FAFB;
+  background-color: #F4F6F8;
 `;
 
 const App = () => {
