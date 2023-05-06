@@ -2,15 +2,15 @@ import React from "react";
 import Navbar from "../src/components/Navbar";
 import Aside from "../src/components/Aside";
 import styled from "styled-components";
-import Home from "./Pages/Home";
+import ComRoute from "./Routes/route";
 
 const Body = styled.body`
   display: flex;
   height: 2000px;
 `;
 const MainContainer = styled("div")`
-  width: 100%;  
-  background-color: #F4F6F8;
+  width: 100%;
+  background-color: #f4f6f8;
 `;
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
       <Aside />
       <MainContainer>
         <Navbar />
-        <Home />
+        <ComRoute />
       </MainContainer>
     </Body>
   );

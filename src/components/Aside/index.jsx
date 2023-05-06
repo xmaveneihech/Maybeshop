@@ -8,9 +8,9 @@ import Feedicon from "../../images/feed-1.png";
 import Contacticon from "../../images/headset.png";
 import Burgericon from "../../images/free-icon-font-menu-burger.png";
 import Settings from "../../images/gear.png";
+import { Link } from "react-router-dom";
 
 const Asiide = styled.aside`
-
   height: 100%;
   width: 150px;
   background-color: #f9fafb;
@@ -25,11 +25,12 @@ const Div = styled.div`
     background-color: #ffd500;
   }
 `;
-const Text = styled.p`
+const Text = styled(Link)`
   color: #637381;
   margin-left: 22px;
   font-weight: 600;
   white-space: nowrap;
+  text-decoration: none;
 `;
 const BurgerMenu = styled.img`
   cursor: pointer;
@@ -86,11 +87,11 @@ function Aside() {
       <BurgerMenu src={Burgericon} onClick={resizeAside} />
       <Div>
         <Home src={Homeicon} />
-        <Text>Home</Text>
+        <Text to={"/"}>Home</Text>
       </Div>
       <Div>
         <Discover src={Discovericon} />
-        <Text>Discover</Text>
+        <Text to={"/discover"}>Discover</Text>
       </Div>
       <Div>
         <Popular src={Popularicon} />

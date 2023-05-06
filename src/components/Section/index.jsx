@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../config";
-import ACard from "../Cards/Tavarlar";
 import { Routes, Route } from "react-router-dom";
 import styled from "styled-components";
+import TavarUchunCard from "../Cards/Tavarlar";
 const collectionName = "maybe-shop";
 
 const Appleinfo = styled("div")`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-`
+`;
 const DiscoverApple = styled("p")`
   margin-left: 30px;
   color: #637381;
@@ -193,8 +193,8 @@ const Section = () => {
   return (
     <section>
       <Appleinfo>
-      <DiscoverApple>Discover / Apple</DiscoverApple>
-      <InfoElectronic>Goods from Apple company</InfoElectronic>
+        <DiscoverApple>Discover / Apple</DiscoverApple>
+        <InfoElectronic>Goods from Apple company</InfoElectronic>
       </Appleinfo>
       <ButtonContainer>
         <Allproducts>All</Allproducts>
@@ -207,9 +207,7 @@ const Section = () => {
         <Keyboardbtn>Keyboard</Keyboardbtn>
         <Acessoriesbtn>Accessories</Acessoriesbtn>
       </ButtonContainer>
-      <Routes>
-        <Route path="/" element={<ACard data={firebaseTavarlar} />} />
-      </Routes>
+      <TavarUchunCard data={firebaseTavarlar} />
     </section>
   );
 };
