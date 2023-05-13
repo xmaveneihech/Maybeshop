@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../config";
 import styled from "styled-components";
-import TavarUchunCard from "../Cards/Tavarlar";
+import Iphonecard from "../Cards/iphonecards";
 import { Link } from "react-router-dom";
 const collectionName = "maybe-shop";
 
@@ -33,7 +33,6 @@ const ProductButton = styled(Link)`
   font-size: 15px;
   cursor: pointer;
   transition: 0.3s;
-  text-decoration: none;
   &:hover {
     background-color: #161c24;
     transition: 0.3s;
@@ -49,19 +48,15 @@ const Section = () => {
   const itemsTitle = [
     {
       title: "All",
-      path: "/all",
     },
     {
       title: "iPhone",
-      path: "/iphone",
     },
     {
       title: "iPad",
-      path: "/ipad",
     },
     {
       title: "Macbook",
-      path: "/macbook",
     },
     {
       title: "Airpods",
@@ -98,15 +93,15 @@ const Section = () => {
   return (
     <section>
       <Appleinfo>
-        <DiscoverApple>Discover / Apple</DiscoverApple>
+        <DiscoverApple>Discover / Apple / iPhone</DiscoverApple>
         <InfoElectronic>Goods from Apple company</InfoElectronic>
       </Appleinfo>
       <ButtonContainer>
         {itemsTitle.map((d) => (
-          <ProductButton to={d.path}>{d.title}</ProductButton>
+        <ProductButton>{d.title}</ProductButton>
         ))}
       </ButtonContainer>
-      <TavarUchunCard data={firebaseTavarlar} />
+      <Iphonecard data={firebaseTavarlar} />
     </section>
   );
 };

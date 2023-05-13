@@ -18,6 +18,7 @@ const Asiide = styled.aside`
 `;
 const Div = styled.div`
   margin-top: 20px;
+  height: 50px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -87,7 +88,7 @@ function Aside() {
       <BurgerMenu src={Burgericon} onClick={resizeAside} />
       <Div>
         <Home src={Homeicon} />
-        <Text to={"/"}>Home</Text>
+        <Text to={"/home"}>Home</Text>
       </Div>
       <Div>
         <Discover src={Discovericon} />
