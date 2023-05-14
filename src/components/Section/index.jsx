@@ -48,37 +48,54 @@ const ButtonContainer = styled("div")`
 const Section = () => {
   const itemsTitle = [
     {
+      id: 1,
       title: "All",
       path: "/all",
     },
     {
+      id: 2,
       title: "iPhone",
       path: "/iphone",
     },
     {
+      id: 3,
       title: "iPad",
       path: "/ipad",
     },
     {
+      id: 4,
       title: "Macbook",
       path: "/macbook",
     },
     {
+      id: 5,
       title: "Airpods",
+      path: "/airpods"
     },
     {
+      id: 6,
       title: "Watch",
+      path: "/watch"
     },
     {
+      id: 7,
       title: "EarPods",
+      path: "/earpods"
     },
     {
+      id: 8,
       title: "Keyboard",
+      path: "/keyboard"
     },
     {
+      id: 9,
       title: "Accessirous",
+      path: "/accessirous"
     },
   ];
+
+
+
   const [firebaseTavarlar, setFirebaseTavarlar] = useState([]);
   const tavar = collection(db, collectionName);
   useEffect(() => {
