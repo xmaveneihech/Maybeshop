@@ -8,7 +8,7 @@ import Feedicon from "../../images/feed-1.png";
 import Contacticon from "../../images/headset.png";
 import Burgericon from "../../images/free-icon-font-menu-burger.png";
 import Settings from "../../images/gear.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Asiide = styled.aside`
   height: 100%;
@@ -39,22 +39,7 @@ const BurgerMenu = styled.img`
   margin-left: 20px;
   margin-top: 20px;
 `;
-const Home = styled.img`
-  margin-left: 20px;
-`;
-const Discover = styled.img`
-  margin-left: 20px;
-`;
-const Popular = styled.img`
-  margin-left: 20px;
-`;
-const Top = styled.img`
-  margin-left: 20px;
-`;
-const Feed = styled.img`
-  margin-left: 20px;
-`;
-const Contact = styled.img`
+const Icons = styled.img`
   margin-left: 20px;
 `;
 const Settingsicon = styled.img`
@@ -67,8 +52,37 @@ const Div2 = styled.div`
   margin-top: 85rem;
 `;
 
+const data = [
+  {
+    icon: Homeicon,
+    name: "Home",
+  },
+  {
+    icon: Discovericon,
+    name: "Discover",
+  },
+  {
+    icon: Popularicon,
+    name: "Popular Products",
+  },
+  {
+    icon: Topicon,
+    name: "Top Authors",
+  },
+  {
+    icon: Feedicon,
+    name: "Feed",
+  },
+  {
+    icon: Contacticon,
+    name: "Contact",
+  },
+];
+
 function Aside() {
+  const { pathname } = useLocation();
   const [asideSize, setAsideSize] = useState(250);
+  const [active, setActive] = useState(true);
 
   const resizeAside = () => {
     if (asideSize === 250) {
@@ -86,30 +100,14 @@ function Aside() {
       }}
     >
       <BurgerMenu src={Burgericon} onClick={resizeAside} />
-      <Div>
-        <Home src={Homeicon} />
-        <Text to={"/home"}>Home</Text>
-      </Div>
-      <Div>
-        <Discover src={Discovericon} />
-        <Text to={"/discover"}>Discover</Text>
-      </Div>
-      <Div>
-        <Popular src={Popularicon} />
-        <Text>Popular Products</Text>
-      </Div>
-      <Div>
-        <Top src={Topicon} />
-        <Text>Top Authors</Text>
-      </Div>
-      <Div>
-        <Feed src={Feedicon} />
-        <Text>Feed</Text>
-      </Div>
-      <Div>
-        <Contact src={Contacticon} />
-        <Text>Contact</Text>
-      </Div>
+
+      {data.map((data) => (
+        <Div>
+          <Icons src={data.icon} />
+          <Text>{data.name}</Text>
+        </Div>
+      ))}
+
       <Div2>
         <Settingsicon src={Settings} />
         <Text>Settings</Text>
