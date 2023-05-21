@@ -54,28 +54,40 @@ const Div2 = styled.div`
 
 const data = [
   {
+    id: 1,
     icon: Homeicon,
     name: "Home",
+    path: "/home"
   },
   {
+    id: 2,
     icon: Discovericon,
     name: "Discover",
+    path: "/discover"
   },
   {
+    id: 3,
     icon: Popularicon,
     name: "Popular Products",
+    path: "/popular-products"
   },
   {
+    id: 4,
     icon: Topicon,
     name: "Top Authors",
+    path: "/top-authors"
   },
   {
+    id: 5,
     icon: Feedicon,
     name: "Feed",
+    path: "/feed"
   },
   {
+    id: 6,
     icon: Contacticon,
     name: "Contact",
+    path: "/contact"
   },
 ];
 
@@ -104,7 +116,7 @@ function Aside() {
       {data.map((data) => (
         <Div>
           <Icons src={data.icon} />
-          <Text>{data.name}</Text>
+          <Text to={data.path}>{data.name}</Text>
         </Div>
       ))}
 

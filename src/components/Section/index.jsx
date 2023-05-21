@@ -52,7 +52,7 @@ const itemsTitle = [
   {
     id: 1,
     title: "All",
-    path: "/",
+    path: "/all",
     category: "all",
   },
   {
@@ -124,16 +124,15 @@ const Section = () => {
     };
     getTavarlar();
   }, []);
-  console.log(firebaseTavarlar);
   const filterItems = (category) => {
     if (category === "all") {
-      {firebaseTavarlar.map(filterItems)}
-    } else {
+      setFilteredItems(firebaseTavarlar);
+    }else {
       const filtered = firebaseTavarlar.filter(
         (item) => item.category === category
       );
       setFilteredItems(filtered);
-      setShowAllItems(false);
+      setShowAllItems(true);
     }
   };
   return (

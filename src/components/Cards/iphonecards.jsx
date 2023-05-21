@@ -72,7 +72,8 @@ const Subname = styled("p")`
     margin-top: -1rem;
     color: #637381;
 `
-const TavarUchunCard = ({ data }) => {
+const Iphonecard = ({ data }) => {
+  console.log(data);
 
   return (
     <Container>
@@ -106,4 +107,4 @@ const TavarUchunCard = ({ data }) => {
   );
 };
 
-export default TavarUchunCard;
+export default Iphonecard;
