@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 const Footter = styled.footer`
-    background-color: aliceblue;
+    background-color: #f6cd00;
     width: 100%;
     height: 300px;
-`
+`;
 
 const Footer = () => {
     return (
@@ -15,4 +15,4 @@ const Footer = () => {
     )
 }
 
-export default Footer;
+export default Footer; 

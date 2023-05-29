@@ -4,6 +4,7 @@ import Aside from "../src/components/Aside";
 import styled from "styled-components";
 import ComRoute from "./Routes/route";
 import Footer from "../src/components/Footer";
+import Home from "./Pages/Home";
 
 const Body = styled.body`
   display: flex;
@@ -11,7 +12,7 @@ const Body = styled.body`
 `;
 const MainContainer = styled("div")`
   width: 100%;
-  background-color: #f4f6f8;
+  background-color: white;
 `;
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
       <MainContainer>
         <Navbar />
         <ComRoute />
+        <Home />
         <Footer />
       </MainContainer>
     </Body>

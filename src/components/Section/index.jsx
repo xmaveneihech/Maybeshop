@@ -124,10 +124,11 @@ const Section = () => {
     };
     getTavarlar();
   }, []);
+
   const filterItems = (category) => {
     if (category === "all") {
       setFilteredItems(firebaseTavarlar);
-    }else {
+    } else {
       const filtered = firebaseTavarlar.filter(
         (item) => item.category === category
       );
@@ -145,7 +146,7 @@ const Section = () => {
         {itemsTitle.map((d, i) => (
           <ProductButton key={i} onClick={() => filterItems(d.category)}>
             {d.title}
-          </ProductButton>
+          </ProductButton>  
         ))}
       </ButtonContainer>
       <TavarUchunCard data={filteredItems} />

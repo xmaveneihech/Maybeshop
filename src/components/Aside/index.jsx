@@ -115,7 +115,7 @@ function Aside() {
 
       {data.map((data) => (
         <Div>
-          <Icons src={data.icon} />
+          <Icons src={data.icon}/>
           <Text to={data.path}>{data.name}</Text>
         </Div>
       ))}
