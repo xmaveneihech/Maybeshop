@@ -28,7 +28,7 @@ const InfoElectronic = styled("h1")`
 
 const ProductButton = styled("button")`
   color: white;
-  background-color: #525960;
+  background-color: #22B07D;
   text-align: center;
   border: none;
   border-radius: 25px;
@@ -37,8 +37,9 @@ const ProductButton = styled("button")`
   cursor: pointer;
   transition: 0.3s;
   text-decoration: none;
+  font-weight: 600;
   &:hover {
-    background-color: #161c24;
+    background-color: #1b8a61;
     transition: 0.3s;
   }
 `;
@@ -124,6 +125,7 @@ const Section = () => {
     };
     getTavarlar();
   }, []);
+
 
   const filterItems = (category) => {
     if (category === "all") {

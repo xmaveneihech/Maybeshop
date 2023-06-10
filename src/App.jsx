@@ -8,7 +8,7 @@ import Home from "./Pages/Home";
 
 const Body = styled.body`
   display: flex;
-  height: 2500px;
+  height: auto;
 `;
 const MainContainer = styled("div")`
   width: 100%;

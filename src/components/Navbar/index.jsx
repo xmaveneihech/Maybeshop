@@ -1,28 +1,29 @@
 import React from "react";
 import styled from "styled-components";
-import Bellicon from "../../images/bell.png";
-import Moonicon from "../../images/moon.png";
-import Carticon from "../../images/cart.png";
+import Bellicon from "../../images/free-icon-font-bell-ring (2).png";
+import Moonicon from "../../images/free-icon-font-eclipse.png";
+import Carticon from "../../images/free-icon-font-shopping-basket (2).png";
 
 const Nav = styled.nav`
   width: 100%;
   height: 90px;
   display: flex;
   justify-content: space-between;
-  background-color: #F4F6F8;
+  background-color: #230b34;
 `;
 const Search = styled.input`
-position: static;
+  position: static;
   width: 220px;
   height: 38px;
   font-size: 15px;
   border-radius: 20px;
   border: none;
-  padding-left: 50px;
-  background-color: #dfe3e8;
+  padding-left: 20px;
+  padding-right: 20px;
   outline: none;
   margin-left: 50px;
   margin-top: 20px;
+  color: black;
 `;
 const Moon = styled.img`
   margin-right: 1rem;
@@ -45,12 +46,14 @@ const Navigation = styled("div")`
 const Button = styled.button`
   border: none;
   cursor: pointer;
-  background-color: #ffd500;
+  background-color: #22b07d;
+  color: white;
+  font-weight: 700;
   width: 150px;
   height: 30px;
   border-radius: 20px;
   &:hover {
-    background-color: #f6cd00;
+    background-color: #1c8d63;
   }
 `;
 
@@ -62,7 +65,7 @@ const Navbar = () => {
         <Moon src={Moonicon} />
         <Bell src={Bellicon} />
         <Cart src={Carticon} />
-        <Button>Become a seller</Button>
+        <Button>Стать продавцом</Button>
       </Navigation>
     </Nav>
   );

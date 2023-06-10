@@ -13,7 +13,7 @@ const rotate = keyframes`
 
 // Создаем стилизованный компонент для прелоадера
 const Loader = styled.div`
-  border-top: 4px solid #ffd500;
+  border-top: 4px solid #22B07D;
   border-radius: 50%;
   width: 30px;
   height: 30px;

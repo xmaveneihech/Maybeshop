@@ -53,7 +53,7 @@ const SecondContainer = styled("div")`
   margin-top: -3rem;
 `;
 const Price = styled("p")`
-  color: #ffd500;
+  color: #22B07D;
   font-weight: 700;
   margin-left: 3.5rem;
 `;

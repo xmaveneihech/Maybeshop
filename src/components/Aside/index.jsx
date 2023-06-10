@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Homeicon from "../../images/house.png";
-import Discovericon from "../../images/compass.png";
-import Popularicon from "../../images/box.png";
-import Topicon from "../../images/user-group.png";
-import Feedicon from "../../images/feed-1.png";
-import Contacticon from "../../images/headset.png";
+import Discovericon from "../../images/free-icon-font-shopping-cart.png";
+import Popularicon from "../../images/free-icon-font-chart-histogram.png";
+import Topicon from "../../images/free-icon-font-users-alt.png";
+import Feedicon from "../../images/free-icon-font-user-add.png";
+import Contacticon from "../../images/free-icon-font-headphones.png";
 import Burgericon from "../../images/free-icon-font-menu-burger.png";
 import Settings from "../../images/gear.png";
 import { Link, useLocation } from "react-router-dom";
 
 const Asiide = styled.aside`
-  height: 100%;
+  height: auto;
   width: 150px;
-  background-color: #f9fafb;
+  background-color: #2d0f43;
   overflow: hidden;
 `;
 const Div = styled.div`
@@ -23,11 +23,11 @@ const Div = styled.div`
   align-items: center;
   cursor: pointer;
   &:hover {
-    background-color: #ffd500;
+    background-color: #1d0a2c;
   }
 `;
 const Text = styled(Link)`
-  color: #637381;
+  color: white; 
   margin-left: 22px;
   font-weight: 600;
   white-space: nowrap;
@@ -56,37 +56,37 @@ const data = [
   {
     id: 1,
     icon: Homeicon,
-    name: "Home",
+    name: "Домой",
     path: "/home"
   },
   {
     id: 2,
     icon: Discovericon,
-    name: "Discover",
+    name: "Товары",
     path: "/discover"
   },
   {
     id: 3,
     icon: Popularicon,
-    name: "Popular Products",
+    name: "Популярное",
     path: "/popular-products"
   },
   {
     id: 4,
     icon: Topicon,
-    name: "Top Authors",
+    name: "Топ продавцов",
     path: "/top-authors"
   },
   {
     id: 5,
     icon: Feedicon,
-    name: "Feed",
+    name: "Стать продавцом",
     path: "/feed"
   },
   {
     id: 6,
     icon: Contacticon,
-    name: "Contact",
+    name: "Связаться",
     path: "/contact"
   },
 ];

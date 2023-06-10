@@ -9,7 +9,7 @@ import Slider from "../../components/Slider";
 import AppleProduct from "../../images/8edef17b-e87b-4ac4-94e6-4bb822b94817.png";
 
 const Section = styled("section")`
-  height: 2100px;
+  height: auto;
 `;
 const BckgFon = styled("img")`
   margin-left: 120px;
@@ -34,7 +34,7 @@ const ContText2 = styled("h2")`
   top: -15px;
 `;
 const PText = styled("p")`
-  color: #f6cd00;
+  color: #22B07D;
   position: relative;
   top: 35px;
   font-size: 35px;
@@ -47,7 +47,7 @@ const BuyButton = styled("button")`
   left: -1060px;
   border-radius: 20px;
   border: none;
-  background-color: #f6cd00;
+  background-color: #22B07D;
   font-size: 20px;
   outline: none;
   font-weight: 600;
@@ -142,17 +142,6 @@ const Home = () => {
         <Slider />
       </Container2>
       <AppleProd src={AppleProduct} />
-      <Container3>
-        <H1Cont3>Apple</H1Cont3>
-        {data.map((item) => (
-          <ACardContainer>
-            <Names>{item.name}</Names>
-            <ContImg>
-              <Images src={item.img} />
-            </ContImg>
-          </ACardContainer>
-        ))};
-      </Container3>
     </Section>
   );
 };
